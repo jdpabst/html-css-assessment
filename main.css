@@ -1,0 +1,120 @@
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./img/main-bg.jpeg");
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.top-nav{
+    width: 100%;
+    height: 80px;
+    display: none;
+}
+
+ul{
+    width: 100%;
+    /*border: 2px solid black;*/
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    display: inline-block;
+    color: white;
+    padding: 10px 10px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.top-nav-mobile {
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+.hamburger {
+    height: 40px;
+    width: 40px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 3%;
+}
+
+#bars {
+    font-size: 26px;
+    color: white;
+    position: absolute;
+    top: 20%;
+    right: 24%;
+}
+
+.twitter {
+    color: white;
+    position: absolute;
+    top: 35%;
+    right: 21%;
+}
+.fb {
+    color: white;
+    position: absolute;
+    top: 35%;
+    right: 10%;
+}
+.center-words {
+    width: 100%;
+    height: 120px;
+    color: white;
+    position: absolute;
+    top: 40%;
+    /*border: 2px solid black;*/
+    
+}
+
+.large {
+    font-size: 80px;
+    font-family: 'Oxygen', sans-serif; 
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+
+.smaller {
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif; 
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.scroll-btn{
+    height: 50px;
+    width: 50px;
+    background: white;
+    position: absolute;
+    bottom: 25px;
+    left: calc(50% - 25px);
+    border-radius: 50%;
+    /*border: 2px solid black;*/
+}
+
+#arrow {
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    right: 35%;
+}
+
+@media(min-width: 650px){
+    .top-nav-mobile {
+        display: none;
+    }
+    .top-nav {
+        display: block;
+    }
+}
